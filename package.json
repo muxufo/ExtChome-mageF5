@@ -1,0 +1,11 @@
+{
+  "name": "mageF5_chromeExt",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "dom-to-image": "^2.6.0",
+    "file-saver": "^2.0.2",
+    "html2canvas": "latest",
+    "jquery": "^3.4.1"
+  }
+}

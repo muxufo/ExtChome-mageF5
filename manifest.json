@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "mageF5",
+  "version": "1",
+  "author": "Nicolas Crelier",
+  "permissions": ["activeTab","http://*/*", "https://*/*"],
+  "browser_action": {
+    "default_icon": "./images/icons/money.png",
+    "default_popup" : "popup.html",
+    "default_title": "Here comes the money !!"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  }
+}
