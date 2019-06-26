@@ -38,14 +38,21 @@ var screenshot = {
         console.log('init event addlistener screen');
         chrome.runtime.onMessage.addListener(
             function (request, sender, sendResponse) {
-                if (request.greeting == "hello") {
+
+                console.log(sender.tab ?
+                    "from a content script:" + sender.tab.url :
+                    "from the extension");
+                if (request.message === "go") {
+
                     chrome.tabs.captureVisibleTab(null, {format: "png"}, function (data) {
                         screenshot.data = data;
                         screenshot.saveScreenshot();
 
                     });
+                    sendResponse({message: "success"});
 
                 }
+                return true;
             });
     }
 };
@@ -109,12 +116,12 @@ function reloadPage(){
 
 
 chrome.tabs.onUpdated.addListener(my_listener);
-screenshot.init();
+// screenshot.init();
 console.log('listener added');
-
-setInterval(function() {
-    reloadPage()
-}, 900000);
+//
+// setInterval(function() {
+//     reloadPage()
+// }, 10000);
 
 
 /*
