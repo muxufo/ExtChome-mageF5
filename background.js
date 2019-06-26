@@ -46,12 +46,13 @@ var screenshot = {
 };
 
 var countdown = {
-    remain: 0,
+    remain: -1,
+    initValue: -1
 };
 
 chrome.runtime.onConnect.addListener(function (port) {
     console.assert(port.name === "letmeiiiiin");
-    port.postMessage({textValue: countdown.remain});
+    port.postMessage({textValue: countdown.initValue});
 });
 
 // chrome extension keepAlive
@@ -94,35 +95,26 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
-        console.log(sender.tab ?
-            "from a content script:" + sender.tab.url :
-            "from the extension");
         if (request.message === "init") {
-            countdown.remain = request.coutndown;
+            countdown.initValue = request.coutndown;
+            countdown.remain = countdown.initValue;
             sendResponse({message: "success"});
         }
     }
 );
 
 
-
 function reloadPage() {
     console.log('Reloading page...');
-    console.log('Remaining screenshot: ' + countdown.remain);
-    if (countdown.remain > 0) {
-        screenshot.init();
+    console.log('interval screenshot: ' + countdown.remain);
+    if (countdown.remain >= 0) {
+        if (countdown.remain === 0) {
+            screenshot.init();
+            countdown.remain = countdown.initValue;
+        }
+
         countdown.remain--;
     }
-
-
-    // chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-    //     if (changeInfo.status === 'complete') {
-    //         chrome.tabs.query({ active: true }, function(tabs) {
-    //             const msg = "Hello from background";
-    //             chrome.tabs.sendMessage(tabs[0].id, { "message": msg });
-    //         })
-    //     }
-    // });
 
     chrome.tabs.query({active: true}, function (arrayOfTabs) {
 
@@ -138,16 +130,14 @@ function reloadPage() {
 }
 
 
-
-
-
 setInterval(function () {
     reloadPage()
-}, 40000);
+}, 59000);
 
 /*
 1 sec = 1000 ms
 10 sec = 10000 ms
+59 sec = 59000 ms
 100 sec = 100000 ms
 900 sec = 900000 ms
  */
