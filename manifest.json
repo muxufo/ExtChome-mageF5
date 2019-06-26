@@ -3,11 +3,22 @@
   "name": "mageF5",
   "version": "1",
   "author": "Nicolas Crelier",
-  "permissions": ["activeTab","http://*/*", "https://*/*"],
+  "permissions": ["activeTab","http://*/*", "https://*/*", "browsingData"],
   "browser_action": {
-    "default_icon": "./images/icons/money.png",
-    "default_popup" : "popup.html",
-    "default_title": "Here comes the money !!"
+    "default_title": "Here comes the money !!",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icons/ldlc16.png",
+      "32": "images/icons/ldlc32.png",
+      "48": "images/icons/ldlc48.png",
+      "128": "images/icons/ldlc128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icons/ldlc16.png",
+    "32": "images/icons/ldlc32.png",
+    "48": "images/icons/ldlc48.png",
+    "128": "images/icons/ldlc128.png"
   },
   "content_scripts": [
     {
