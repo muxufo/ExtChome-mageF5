@@ -1,8 +1,11 @@
 $('#start-button').on('click', function () {
     var valueText = $('#text-time').val();
+    chrome.runtime.sendMessage({message: "init", coutndown: valueText}, function (response) {});
+});
 
-    chrome.runtime.sendMessage({message: "init", coutndown: valueText}, function (response) {
 
+$('#stop-reload').on('click', function () {
+    chrome.runtime.sendMessage({message: "stop"}, function (response) {
     });
 });
 

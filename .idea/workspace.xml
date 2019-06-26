@@ -2,8 +2,830 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccfd714b-d61e-4903-b0ce-604a6d9c309f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/background.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/base64-arraybuffer/LICENSE-MIT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/base64-arraybuffer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/base64-arraybuffer/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/base64-arraybuffer/lib/base64-arraybuffer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/base64-arraybuffer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/css-line-break.es5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/css-line-break.es5.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/css-line-break.umd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/css-line-break.umd.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/lib/LineBreak.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/lib/LineBreak.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/lib/Trie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/lib/Trie.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/lib/TrieBuilder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/lib/TrieBuilder.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/lib/Util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/lib/Util.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/lib/linebreak-trie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/lib/linebreak-trie.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/types/LineBreak.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/types/Trie.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/types/TrieBuilder.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/types/Util.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/types/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/dist/types/linebreak-trie.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/rollup.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-line-break/travis_wait_2010.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/.github/ISSUE_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/.jsbeautifyrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/.stylelintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/Gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/HELP-US-OUT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/css/font-awesome.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/fontawesome/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/MIT-LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/dist/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/dist/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/ajax/jsonp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/ajax/load.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/ajax/parseJSON.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/ajax/parseXML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/ajax/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/ajax/var/nonce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/ajax/var/rquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/ajax/xhr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/attributes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/attributes/attr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/attributes/classes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/attributes/prop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/attributes/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/attributes/val.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/callbacks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/core/access.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/core/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/core/parseHTML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/core/ready.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/core/var/rsingleTag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/css/addGetHookIf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/css/curCSS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/css/defaultDisplay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/css/hiddenVisibleSelectors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/css/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/css/swap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/css/var/cssExpand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/css/var/getStyles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/css/var/isHidden.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/css/var/rmargin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/css/var/rnumnonpx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/data/Data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/data/accepts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/data/var/data_priv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/data/var/data_user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/deferred.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/deprecated.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/dimensions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/effects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/effects/Tween.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/effects/animatedSelector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/event/ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/event/alias.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/event/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/exports/amd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/exports/global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/intro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/manipulation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/manipulation/_evalUrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/manipulation/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/manipulation/var/rcheckableType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/offset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/outro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/queue/delay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/selector-native.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/selector-sizzle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/selector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/serialize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/sizzle/dist/sizzle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/sizzle/dist/sizzle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/sizzle/dist/sizzle.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/traversing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/traversing/findFilter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/traversing/var/rneedsContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/var/arr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/var/class2type.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/var/concat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/var/hasOwn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/var/indexOf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/var/pnum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/var/push.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/var/rnotwhite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/var/slice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/var/strundefined.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/var/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/var/toString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/jquery/src/wrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/bin/imagediff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/browser/canvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/examples/1_normal_a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/examples/1_normal_b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/examples/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/imagediff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/imagediff.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/js/imagediff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/js/license.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/lib/jasmine/MIT.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/lib/jasmine/jasmine-html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/lib/jasmine/jasmine.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/lib/jasmine/jasmine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/lib/jasmine/jasmine_favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/lib/jquery-1.6.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/make/build.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/spec/ImageDiffSpec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/spec/SpecRunner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/spec/images/checkmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/spec/images/checkmark_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/spec/images/xmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/spec/jasmine.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/js-imagediff/spec/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/diff.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/examples/file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/examples/image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/examples/message.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/examples/url.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/ChangeLog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/INSTALL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/NEWS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/arg_parser.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/arg_parser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/bitmap.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/bitmap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/blob.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/blob.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/character.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/character.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/character_r11.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/character_r12.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/character_r13.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/common.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/configure" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/doc/ocrad.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/doc/ocrad.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/doc/ocrad.texinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/feats.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/feats.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/feats_test0.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/feats_test1.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/main.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/mask.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/mask.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/ocrad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/ocradlib.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/ocradlib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/ocrcheck.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/page_image.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/page_image.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/page_image_io.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/profile.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/profile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/rational.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/rational.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/rectangle.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/rectangle.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/segment.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/segment.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/testsuite/check.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/testsuite/test.pbm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/testsuite/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/testsuite/test_utf8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/textblock.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/textblock.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/textline.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/textline.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/textline_r2.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/textpage.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/textpage.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/track.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/track.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/ucs.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad-0.23-pre1/ucs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/ocrad.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/pre.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/bower_components/ocrad-bower/worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/dist/dom-to-image.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/dom-to-image.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/bgcolor/control-image" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/bgcolor/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/bgcolor/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/big/control-image" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/bigger/control-image" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/bigger/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/bigger/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/border/control-image" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/border/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/border/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/canvas/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/canvas/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/css-bg/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/css-bg/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/dimensions/control-image" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/dimensions/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/dimensions/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/ext-css/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/ext-css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/filter/control-image" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/filter/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/filter/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/fonts/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/fonts/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/fonts/web-fonts/embedded.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/fonts/web-fonts/empty.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/fonts/web-fonts/remote.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/fonts/web-fonts/rules-relative.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/fonts/web-fonts/rules-relative.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/fonts/web-fonts/rules.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/fonts/web-fonts/with-query.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/hash/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/hash/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/images/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/images/image.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/images/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/input/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/input/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/pixeldata/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/pixeldata/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/pseudo/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/pseudo/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/scale/control-image" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/scale/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/scale/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/scroll/control-image" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/scroll/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/scroll/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/sheet/control-image" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/sheet/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/sheet/sheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/sheet/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/small/control-image" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/small/control-image-jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/small/control-image-jpeg-low" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/small/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/small/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/style/control-image" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/style/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/svg-ns/control-image" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/svg-ns/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/svg-ns/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/svg-rect/control-image" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/svg-rect/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/svg-rect/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/text/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/text/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/textarea/dom-node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/textarea/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/util/fontawesome.base64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/spec/resources/util/fontawesome.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/src/dom-to-image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dom-to-image/test-lib/tesseract-1.0.10.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/file-saver/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/file-saver/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/file-saver/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/file-saver/dist/FileSaver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/file-saver/dist/FileSaver.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/file-saver/dist/FileSaver.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/file-saver/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/file-saver/src/FileSaver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/ci/browser-tests.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/configs/base.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/configs/preview.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/configs/scripts.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/html2canvas.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/html2canvas.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/html2canvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/html2canvas.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/html2canvas.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/core/__tests__/cache-storage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/core/__tests__/cache-storage.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/core/__tests__/mock-context.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/core/__tests__/mock-context.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/core/bitwise.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/core/bitwise.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/core/cache-storage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/core/cache-storage.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/core/features.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/core/features.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/core/logger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/core/logger.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/core/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/core/util.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/IPropertyDescriptor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/IPropertyDescriptor.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/ITypeDescriptor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/ITypeDescriptor.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/layout/bounds.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/layout/bounds.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/layout/text.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/layout/text.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/__tests__/background-tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/__tests__/background-tests.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/__tests__/text-shadow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/__tests__/text-shadow.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/__tests__/transform-tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/__tests__/transform-tests.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/background-clip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/background-clip.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/background-color.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/background-color.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/background-image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/background-image.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/background-origin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/background-origin.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/background-position.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/background-position.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/background-repeat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/background-repeat.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/background-size.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/background-size.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/border-color.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/border-color.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/border-radius.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/border-radius.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/border-style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/border-style.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/border-width.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/border-width.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/box-shadow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/box-shadow.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/color.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/color.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/content.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/content.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/counter-increment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/counter-increment.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/counter-reset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/counter-reset.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/display.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/display.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/float.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/float.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/font-family.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/font-family.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/font-size.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/font-size.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/font-style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/font-style.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/font-variant.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/font-variant.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/font-weight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/font-weight.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/letter-spacing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/letter-spacing.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/line-break.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/line-break.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/line-height.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/line-height.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/list-style-image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/list-style-image.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/list-style-position.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/list-style-position.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/list-style-type.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/list-style-type.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/margin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/margin.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/opacity.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/opacity.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/overflow-wrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/overflow-wrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/overflow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/overflow.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/padding.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/padding.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/position.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/position.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/quotes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/quotes.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/text-align.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/text-align.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/text-decoration-color.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/text-decoration-color.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/text-decoration-line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/text-decoration-line.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/text-shadow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/text-shadow.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/text-transform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/text-transform.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/transform-origin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/transform-origin.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/transform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/transform.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/visibility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/visibility.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/word-break.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/word-break.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/z-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/property-descriptors/z-index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/syntax/__tests__/tokernizer-tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/syntax/__tests__/tokernizer-tests.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/syntax/parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/syntax/parser.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/syntax/tokenizer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/syntax/tokenizer.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/__tests__/color-tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/__tests__/color-tests.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/__tests__/image-tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/__tests__/image-tests.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/angle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/angle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/color.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/color.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/-prefix-linear-gradient.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/-prefix-linear-gradient.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/-prefix-radial-gradient.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/-prefix-radial-gradient.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/-webkit-gradient.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/-webkit-gradient.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/__tests__/radial-gradient.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/__tests__/radial-gradient.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/counter.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/gradient.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/gradient.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/linear-gradient.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/linear-gradient.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/radial-gradient.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/functions/radial-gradient.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/image.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/length-percentage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/length-percentage.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/length.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/css/types/length.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/document-cloner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/document-cloner.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/element-container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/element-container.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/elements/li-element-container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/elements/li-element-container.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/elements/ol-element-container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/elements/ol-element-container.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/elements/select-element-container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/elements/select-element-container.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/elements/textarea-element-container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/elements/textarea-element-container.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/node-parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/node-parser.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/replaced-elements/canvas-element-container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/replaced-elements/canvas-element-container.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/replaced-elements/iframe-element-container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/replaced-elements/iframe-element-container.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/replaced-elements/image-element-container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/replaced-elements/image-element-container.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/replaced-elements/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/replaced-elements/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/replaced-elements/input-element-container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/replaced-elements/input-element-container.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/replaced-elements/pseudo-elements.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/replaced-elements/pseudo-elements.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/replaced-elements/svg-element-container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/replaced-elements/svg-element-container.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/text-container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/dom/text-container.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/invariant.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/invariant.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/background.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/bezier-curve.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/bezier-curve.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/border.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/border.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/bound-curves.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/bound-curves.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/box-sizing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/box-sizing.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/canvas/canvas-renderer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/canvas/canvas-renderer.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/canvas/foreignobject-renderer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/canvas/foreignobject-renderer.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/effects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/effects.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/font-metrics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/font-metrics.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/path.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/path.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/stacking-context.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/stacking-context.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/vector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/lib/render/vector.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/build/reftests.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/core/__tests__/cache-storage.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/core/__tests__/mock-context.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/core/bitwise.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/core/cache-storage.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/core/features.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/core/logger.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/core/util.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/IPropertyDescriptor.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/ITypeDescriptor.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/layout/bounds.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/layout/text.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/__tests__/background-tests.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/__tests__/text-shadow.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/__tests__/transform-tests.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/background-clip.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/background-color.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/background-image.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/background-origin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/background-position.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/background-repeat.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/background-size.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/border-color.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/border-radius.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/border-style.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/border-width.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/box-shadow.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/color.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/content.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/counter-increment.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/counter-reset.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/display.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/float.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/font-family.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/font-size.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/font-style.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/font-variant.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/font-weight.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/letter-spacing.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/line-break.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/line-height.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/list-style-image.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/list-style-position.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/list-style-type.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/margin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/opacity.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/overflow-wrap.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/overflow.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/padding.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/position.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/quotes.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/text-align.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/text-decoration-color.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/text-decoration-line.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/text-shadow.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/text-transform.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/transform-origin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/transform.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/visibility.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/word-break.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/property-descriptors/z-index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/syntax/__tests__/tokernizer-tests.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/syntax/parser.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/syntax/tokenizer.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/__tests__/color-tests.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/__tests__/image-tests.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/angle.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/color.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/functions/-prefix-linear-gradient.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/functions/-prefix-radial-gradient.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/functions/-webkit-gradient.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/functions/__tests__/radial-gradient.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/functions/counter.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/functions/gradient.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/functions/linear-gradient.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/functions/radial-gradient.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/image.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/length-percentage.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/css/types/length.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/dom/document-cloner.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/dom/element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/dom/elements/li-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/dom/elements/ol-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/dom/elements/select-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/dom/elements/textarea-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/dom/node-parser.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/dom/replaced-elements/canvas-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/dom/replaced-elements/iframe-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/dom/replaced-elements/image-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/dom/replaced-elements/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/dom/replaced-elements/input-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/dom/replaced-elements/pseudo-elements.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/dom/replaced-elements/svg-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/dom/text-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/invariant.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/render/background.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/render/bezier-curve.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/render/border.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/render/bound-curves.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/render/box-sizing.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/render/canvas/canvas-renderer.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/render/canvas/foreignobject-renderer.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/render/effects.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/render/font-metrics.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/render/path.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/render/stacking-context.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/render/vector.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/core/__tests__/cache-storage.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/core/__tests__/mock-context.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/core/bitwise.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/core/cache-storage.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/core/features.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/core/logger.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/core/util.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/IPropertyDescriptor.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/ITypeDescriptor.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/layout/bounds.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/layout/text.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/__tests__/background-tests.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/__tests__/text-shadow.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/__tests__/transform-tests.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/background-clip.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/background-color.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/background-image.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/background-origin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/background-position.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/background-repeat.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/background-size.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/border-color.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/border-radius.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/border-style.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/border-width.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/box-shadow.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/color.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/content.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/counter-increment.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/counter-reset.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/display.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/float.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/font-family.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/font-size.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/font-style.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/font-variant.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/font-weight.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/letter-spacing.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/line-break.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/line-height.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/list-style-image.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/list-style-position.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/list-style-type.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/margin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/opacity.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/overflow-wrap.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/overflow.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/padding.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/position.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/quotes.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/text-align.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/text-decoration-color.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/text-decoration-line.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/text-shadow.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/text-transform.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/transform-origin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/transform.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/visibility.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/word-break.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/property-descriptors/z-index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/syntax/__tests__/tokernizer-tests.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/syntax/parser.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/syntax/tokenizer.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/__tests__/color-tests.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/__tests__/image-tests.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/angle.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/color.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/functions/-prefix-linear-gradient.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/functions/-prefix-radial-gradient.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/functions/-webkit-gradient.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/functions/__tests__/radial-gradient.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/functions/counter.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/functions/gradient.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/functions/linear-gradient.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/functions/radial-gradient.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/image.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/length-percentage.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/css/types/length.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/dom/document-cloner.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/dom/element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/dom/elements/li-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/dom/elements/ol-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/dom/elements/select-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/dom/elements/textarea-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/dom/node-parser.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/dom/replaced-elements/canvas-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/dom/replaced-elements/iframe-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/dom/replaced-elements/image-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/dom/replaced-elements/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/dom/replaced-elements/input-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/dom/replaced-elements/pseudo-elements.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/dom/replaced-elements/svg-element-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/dom/text-container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/invariant.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/render/background.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/render/bezier-curve.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/render/border.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/render/bound-curves.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/render/box-sizing.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/render/canvas/canvas-renderer.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/render/canvas/foreignobject-renderer.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/render/effects.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/render/font-metrics.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/render/path.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/render/stacking-context.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/src/render/vector.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/dist/types/tests/testrunner.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/rollup.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/html2canvas/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/popup.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,20 +841,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/popup.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content.js">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -55,11 +873,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/background.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="126" column="22" lean-forward="true" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
+            <state relative-caret-position="-459" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/popup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -80,8 +905,9 @@
       <list>
         <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/background.js" />
-        <option value="$PROJECT_DIR$/popup.html" />
         <option value="$PROJECT_DIR$/content.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/popup.html" />
       </list>
     </option>
   </component>
@@ -108,12 +934,6 @@
               <item name="ExtChome-mageF5" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExtChome-mageF5" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExtChome-mageF5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExtChome-mageF5" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExtChome-mageF5" type="b2602c69:ProjectViewProjectNode" />
@@ -154,21 +974,21 @@
       <option name="presentableId" value="Default" />
       <updated>1561512819352</updated>
       <workItem from="1561512820454" duration="23855000" />
-      <workItem from="1561564187467" duration="3646000" />
+      <workItem from="1561564187467" duration="12055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27501000" />
+    <option name="totallyTimeSpent" value="35910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20647773" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.20647773" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -190,9 +1010,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/icons/money.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -217,26 +1034,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/popup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+    <entry file="file://$PROJECT_DIR$/node_modules/notifyjs/dist/notify.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/notifyjs/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="169">
+            <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/notifyjs/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        <state relative-caret-position="-561" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/background.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="126" column="22" lean-forward="true" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
+        <state relative-caret-position="-459" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

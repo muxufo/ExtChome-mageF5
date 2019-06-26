@@ -10,14 +10,6 @@
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script src="node_modules/html2canvas/dist/html2canvas.js"></script>
-
-    <script src="node_modules/dom-to-image/dist/dom-to-image.min.js"></script>
-
-    <script src="node_modules/file-saver/dist/FileSaver.js"></script>
-
-
-
 </head>
 <body>
 
@@ -25,11 +17,10 @@
 
     <div class="input-group mb-3" id="start-input">
         <input type="number" id="text-time" class="form-control" placeholder="Interval" aria-label="time" aria-describedby="basic-addon2">
-
     </div>
 
     <div class="btn btn-success" id="start-button">Va miner !</div>
-
+    <div class="btn btn-danger" id="stop-reload">STOOOOP</div>
 
 <!--<button class="btn btn-success" >GO</button>-->
 
@@ -55,7 +46,7 @@
         width: 90px;
         height: 35px;
         position: absolute;
-        top: 120px;
+        top: 128px;
         left: 6px;
         cursor: pointer;
     }
@@ -69,9 +60,18 @@
 
     #start-input {
         position: absolute;
-        top: 86px;
+        top: 95px;
         left: 6px;
         width: 90px;
+    }
+
+    #stop-reload{
+        position: absolute;
+        top: 57px;
+        left: 6px;
+        font-size: 14px;
+        width: 90px;
+        cursor: pointer;
     }
 
 </style>

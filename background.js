@@ -98,6 +98,12 @@ chrome.runtime.onMessage.addListener(
         if (request.message === "init") {
             countdown.initValue = request.coutndown;
             countdown.remain = countdown.initValue;
+            reloadStatus.setOn();
+            sendResponse({message: "success"});
+        }
+
+        if (request.message === "stop") {
+            reloadStatus.setOff();
             sendResponse({message: "success"});
         }
     }
@@ -105,34 +111,40 @@ chrome.runtime.onMessage.addListener(
 
 
 function reloadPage() {
-    console.log('Reloading page...');
-    console.log('interval screenshot: ' + countdown.remain);
-    if (countdown.remain >= 0) {
-        if (countdown.remain === 0) {
-            screenshot.init();
-            countdown.remain = countdown.initValue;
+    if (reloadStatus.status === true) {
+        if (countdown.remain >= 0) {
+            countdown.remain--;
+            if (countdown.remain === 0) {
+                screenshot.init();
+                countdown.remain = countdown.initValue;
+            }
         }
 
-        countdown.remain--;
+        chrome.tabs.query({active: true}, function (arrayOfTabs) {
+            var time = Date.now();
+            chrome.browsingData.removeCache({"since": time}, function () {
+            });
+            chrome.tabs.reload(arrayOfTabs[0].id, {bypassCache: true});
+
+        });
     }
 
-    chrome.tabs.query({active: true}, function (arrayOfTabs) {
 
-
-        console.log('in the query');
-        console.log('---------------');
-        var time = Date.now();
-        chrome.browsingData.removeCache({"since": time}, function () {
-        });
-        chrome.tabs.reload(arrayOfTabs[0].id, {bypassCache: true});
-
-    });
 }
 
+var reloadStatus = {
+    setOn: function () {
+        this.status = true;
+    },
+    setOff: function () {
+        this.status = false;
+    },
+};
 
 setInterval(function () {
     reloadPage()
-}, 59000);
+}, 5000);
+
 
 /*
 1 sec = 1000 ms
