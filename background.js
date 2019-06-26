@@ -143,7 +143,7 @@ function reloadPage() {
 
 setInterval(function () {
     reloadPage()
-}, 5000);
+}, 40000);
 
 /*
 1 sec = 1000 ms
