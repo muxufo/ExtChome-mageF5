@@ -143,7 +143,7 @@ var reloadStatus = {
 
 setInterval(function () {
     reloadPage()
-}, 5000);
+}, 59000);
 
 
 /*
