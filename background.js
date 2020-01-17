@@ -128,8 +128,6 @@ function reloadPage() {
 
         });
     }
-
-
 }
 
 var reloadStatus = {
