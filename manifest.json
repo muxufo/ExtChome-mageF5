@@ -3,7 +3,7 @@
   "name": "mageF5",
   "version": "1",
   "author": "Nicolas Crelier",
-  "permissions": ["activeTab","http://*/*", "https://*/*", "browsingData"],
+  "permissions": ["storage","activeTab","http://*/*", "https://*/*", "browsingData", "pageCapture", "notifications"],
   "browser_action": {
     "default_title": "Here comes the money !!",
     "default_popup": "popup.html",
@@ -25,11 +25,11 @@
       "matches": [
         "<all_urls>"
       ],
-      "js": ["content.js"]
+      "js": ["content.js","node_modules/jquery/dist/jquery.min.js"]
     }
   ],
   "background": {
     "persistent": false,
-    "scripts": ["background.js"]
+    "scripts": ["background.js","node_modules/jquery/dist/jquery.min.js"]
   }
 }

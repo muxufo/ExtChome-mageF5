@@ -81,7 +81,7 @@ function toggle_extension(tab) {
 
 function my_listener(tabId, changeInfo, tab) {
     // If updated tab matches this one
-    if (changeInfo.status == "complete" && tabId == the_tab_id && status == 'on') {
+    if (changeInfo.status === "complete" && tabId === the_tab_id && status === 'on') {
         toggle_extension(tab);
     }
 }
@@ -121,6 +121,12 @@ function reloadPage() {
         }
 
         chrome.tabs.query({active: true}, function (arrayOfTabs) {
+
+            //Get html of desired section
+            chrome.tabs.executeScript(arrayOfTabs[0].id, {
+                code: 'document.querySelector(".navigationPage").innerHTML'
+            }, displayHtml);
+
             var time = Date.now();
             chrome.browsingData.removeCache({"since": time}, function () {
             });
@@ -129,6 +135,196 @@ function reloadPage() {
         });
     }
 }
+
+chrome.storage.onChanged.addListener(function (changes, namespace) {
+    for (var key in changes) {
+        var storageChange = changes[key];
+        console.log('Storage key "%s" in namespace "%s" changed. ' +
+            'Old value was "%s", new value is "%s".',
+            key,
+            namespace,
+            storageChange.oldValue,
+            storageChange.newValue);
+    }
+});
+
+
+function displayHtml(html) {
+    var newDoc = document.implementation.createHTMLDocument('test');
+    var body = newDoc.createElement('content');
+    body.innerHTML = html[0];
+
+    newDoc.body.append(body);
+
+    var ordinateurStock = getStockQuantity('ordinateur', newDoc);
+    var pieceStock = getStockQuantity('pieces', newDoc);
+    var peripheriquesStock = getStockQuantity('peripheriques', newDoc);
+    var imageetsonStock = getStockQuantity('imageetson', newDoc);
+    var mobiliteStock = getStockQuantity('mobilite', newDoc);
+    var reseauxStock = getStockQuantity('reseaux', newDoc);
+
+    chrome.storage.sync.get(["ordinateur_stock", "pieces_stock", "peripheriques_stock", "imageetson_stock", "mobilite_stock", "reseaux_stock"], function (data) {
+
+        // Just checking the first one cause I set them all at the same time so if this one is undefined, all are
+        if (data.ordinateur_stock === undefined) {
+
+            setLocalStorage("ordinateur_stock", ordinateurStock);
+            setLocalStorage("pieces_stock", pieceStock);
+            setLocalStorage("peripheriques_stock", peripheriquesStock);
+            setLocalStorage("imageetson_stock", imageetsonStock);
+            setLocalStorage("mobilite_stock", mobiliteStock);
+            setLocalStorage("reseaux_stock", reseauxStock);
+
+            console.log('set storage success');
+        } else {
+
+            var options = {
+                type: "list",
+                title: "Informations des stocks",
+                message: "Il y a du changement dans les stocks",
+                iconUrl: "/images/icons/ldlc128.png",
+                items: []
+            };
+
+            if (data.ordinateur_stock < ordinateurStock) {
+                options.items.push({
+                    title: "Ordinateurs",
+                    message: `On est passé de ${data.ordinateur_stock} à ${ordinateurStock} articles`
+                });
+                setLocalStorage("ordinateur_stock", ordinateurStock);
+            }
+
+            if (data.pieces_stock < pieceStock) {
+                options.items.push({
+                    title: "Pièces",
+                    message: `On est passé de ${data.pieces_stock} à ${pieceStock} articles`
+                });
+                setLocalStorage("pieces_stock", pieceStock);
+            }
+
+            if (data.peripheriques_stock < peripheriquesStock) {
+                options.items.push({
+                    title: "Périphériques",
+                    message: `On est passé de ${data.peripheriques_stock} à ${peripheriquesStock} articles`
+                });
+
+                setLocalStorage("peripheriques_stock", peripheriquesStock);
+            }
+            if (data.imageetson_stock < imageetsonStock) {
+                options.items.push({
+                    title: "Image et son",
+                    message: `On est passé de ${data.imageetson_stock} à ${imageetsonStock} articles`
+                });
+                setLocalStorage("imageetson_stock", imageetsonStock);
+            }
+            if (data.mobilite_stock < mobiliteStock) {
+                options.items.push({
+                    title: "Mobilité",
+                    message: `On est passé de ${data.mobilite_stock} à ${mobiliteStock} articles`
+                });
+                setLocalStorage("mobilite_stock", mobiliteStock);
+            }
+            if (data.reseaux_stock < reseauxStock) {
+                options.items.push({
+                    title: "Réseaux",
+                    message: `On est passé de ${data.reseaux_stock} à ${reseauxStock} articles`
+                });
+                setLocalStorage("reseaux_stock", reseauxStock);
+            }
+
+            if (options.items.length > 0){
+                // Send the notif
+                chrome.notifications.create('', options);
+
+                console.log(options);
+
+                sendEmail(options);
+            } else {
+                console.log("Pas de changement de stock")
+            }
+
+        }
+
+    });
+
+    newDoc.body.remove();
+}
+
+function sendEmail(options) {
+    let api_key = '0fa83c48a38f87fdeca7dee19175fbf4-0a4b0c40-29e7039d';
+    let domain = 'sandbox62a8000983bd4f279cdabaeed49c1dbf.mailgun.org';
+
+    var emailText = [];
+
+    for (let i = 0; i < options.items.length; i++){
+        emailText.push(options.items[i].title + " : " + options.items[i].message + '\n');
+    }
+
+    emailText.join("");
+
+    console.log(emailText);
+
+    $.ajax('https://api.mailgun.net/v3/sandbox62a8000983bd4f279cdabaeed49c1dbf.mailgun.org/messages',
+        {
+            type: "POST",
+            username: 'api',
+            password: api_key,
+            data: {
+                from: 'Excited User <mailgun@sandbox62a8000983bd4f279cdabaeed49c1dbf.mailgun.org>',
+                to: 'nicolas.crelier@gmail.com',
+                subject: 'Stock fdp',
+                text: emailText
+            },
+            success: function (a, b, c) {
+                console.log('mail sent: ', b);
+            }.bind(this),
+            error: function (xhr, status, errText) {
+                console.log('mail sent failed: ', xhr.responseText);
+            }
+        });
+}
+
+function setLocalStorage(keyName, value) {
+    chrome.storage.sync.set({[keyName]: value}, function () {
+        console.log("Value is set to" + value);
+    });
+}
+
+function getStockQuantity(elementId, newDoc) {
+    return newDoc.getElementById(elementId).getElementsByClassName("class_css")[0].innerText;
+}
+
+Array.prototype.where = function (filter) {
+
+    var collection = this;
+
+    switch (typeof filter) {
+
+        case 'function':
+            return $.grep(collection, filter);
+
+        case 'object':
+            for (var property in filter) {
+                if (!filter.hasOwnProperty(property))
+                    continue; // ignore inherited properties
+
+                collection = $.grep(collection, function (item) {
+                    return item[property] === filter[property];
+                });
+            }
+            return collection.slice(0); // copy the array
+        // (in case of empty object filter)
+
+        default:
+            throw new TypeError('func must be either a' +
+                'function or an object of properties and values to filter by');
+    }
+};
+
+
+Array.prototype.firstOrDefault = function (func) {
+    return this.where(func)[0] || null;
+};
 
 var reloadStatus = {
     setOn: function () {
