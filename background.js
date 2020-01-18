@@ -338,7 +338,7 @@ var reloadStatus = {
 
 setInterval(function () {
     reloadPage()
-}, 59000);
+}, 600000);
 
 
 /*
@@ -347,6 +347,7 @@ setInterval(function () {
 59 sec = 59000 ms
 100 sec = 100000 ms
 900 sec = 900000 ms
+10 min = 600000ms
  */
 
 
