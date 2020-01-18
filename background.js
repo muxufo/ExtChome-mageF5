@@ -270,8 +270,9 @@ function sendEmail(options) {
             username: 'api',
             password: api_key,
             data: {
-                from: 'Excited User <mailgun@sandbox62a8000983bd4f279cdabaeed49c1dbf.mailgun.org>',
-                to: 'nicolas.crelier@gmail.com',
+                from: 'CDA <mailgun@sandbox62a8000983bd4f279cdabaeed49c1dbf.mailgun.org>',
+                // to: 'nicolas.crelier@gmail.com',
+                to: 'claudelrom90000@aim.com',
                 subject: 'Stock fdp',
                 text: emailText
             },
