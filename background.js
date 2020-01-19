@@ -191,7 +191,6 @@ function displayHtml(html) {
                     title: "Ordinateurs",
                     message: `On est passé de ${data.ordinateur_stock} à ${ordinateurStock} articles`
                 });
-                setLocalStorage("ordinateur_stock", ordinateurStock);
             }
 
             if (data.pieces_stock < pieceStock) {
@@ -199,7 +198,6 @@ function displayHtml(html) {
                     title: "Pièces",
                     message: `On est passé de ${data.pieces_stock} à ${pieceStock} articles`
                 });
-                setLocalStorage("pieces_stock", pieceStock);
             }
 
             if (data.peripheriques_stock < peripheriquesStock) {
@@ -207,39 +205,47 @@ function displayHtml(html) {
                     title: "Périphériques",
                     message: `On est passé de ${data.peripheriques_stock} à ${peripheriquesStock} articles`
                 });
-
-                setLocalStorage("peripheriques_stock", peripheriquesStock);
             }
             if (data.imageetson_stock < imageetsonStock) {
                 options.items.push({
                     title: "Image et son",
                     message: `On est passé de ${data.imageetson_stock} à ${imageetsonStock} articles`
                 });
-                setLocalStorage("imageetson_stock", imageetsonStock);
             }
             if (data.mobilite_stock < mobiliteStock) {
                 options.items.push({
                     title: "Mobilité",
                     message: `On est passé de ${data.mobilite_stock} à ${mobiliteStock} articles`
                 });
-                setLocalStorage("mobilite_stock", mobiliteStock);
             }
             if (data.reseaux_stock < reseauxStock) {
                 options.items.push({
                     title: "Réseaux",
                     message: `On est passé de ${data.reseaux_stock} à ${reseauxStock} articles`
                 });
-                setLocalStorage("reseaux_stock", reseauxStock);
             }
 
-            if (options.items.length > 0){
+            setLocalStorage("ordinateur_stock", ordinateurStock);
+            setLocalStorage("pieces_stock", pieceStock);
+            setLocalStorage("peripheriques_stock", peripheriquesStock);
+            setLocalStorage("imageetson_stock", imageetsonStock);
+            setLocalStorage("mobilite_stock", mobiliteStock);
+            setLocalStorage("reseaux_stock", reseauxStock);
+
+
+            var stockInStorage = `Ordi: ${data.ordinateur_stock} \n Pieces: ${data.pieces_stock} \n Peripheriques: ${data.peripheriques_stock} \n Image et son: ${data.imageetson_stock} \n Mobilite: ${data.mobilite_stock} \n Reseaux: ${data.reseaux_stock}`;
+
+            sendSlackMessage(stockInStorage);
+
+            if (options.items.length > 0) {
                 // Send the notif
                 chrome.notifications.create('', options);
-
                 console.log(options);
 
                 sendEmail(options);
             } else {
+                sendSlackMessage( "Pas de changement de stock");
+
                 console.log("Pas de changement de stock")
             }
 
@@ -256,7 +262,7 @@ function sendEmail(options) {
 
     var emailText = [];
 
-    for (let i = 0; i < options.items.length; i++){
+    for (let i = 0; i < options.items.length; i++) {
         emailText.push(options.items[i].title + " : " + options.items[i].message + '\n');
     }
 
@@ -278,9 +284,11 @@ function sendEmail(options) {
             },
             success: function (a, b, c) {
                 console.log('mail sent: ', b);
+                sendSlackMessage( "Envoie mail succes");
             }.bind(this),
             error: function (xhr, status, errText) {
                 console.log('mail sent failed: ', xhr.responseText);
+                sendSlackMessage( xhr.responseText);
             }
         });
 }
@@ -288,6 +296,20 @@ function sendEmail(options) {
 function setLocalStorage(keyName, value) {
     chrome.storage.sync.set({[keyName]: value}, function () {
         console.log("Value is set to" + value);
+    });
+}
+
+function sendSlackMessage(textToSend) {
+
+    var url = 'https://hooks.slack.com/services/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';
+    $.ajax({
+        data: 'payload=' + JSON.stringify({
+            "text": textToSend
+        }),
+        dataType: 'json',
+        processData: false,
+        type: 'POST',
+        url: url
     });
 }
 
@@ -338,7 +360,7 @@ var reloadStatus = {
 
 setInterval(function () {
     reloadPage()
-}, 600000);
+}, 300000);
 
 
 /*
