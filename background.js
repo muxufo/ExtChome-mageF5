@@ -45,15 +45,15 @@ var screenshot = {
     }
 };
 
+const slackAllmessagesUrl = 'https://hooks.slack.com/services/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';
+const slackNewStockOnlyUrl = 'https://hooks.slack.com/services/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';
+
+
 var countdown = {
     remain: -1,
     initValue: -1
 };
 
-chrome.runtime.onConnect.addListener(function (port) {
-    console.assert(port.name === "letmeiiiiin");
-    port.postMessage({textValue: countdown.initValue});
-});
 
 // chrome extension keepAlive
 
@@ -92,22 +92,6 @@ chrome.browserAction.onClicked.addListener(function (tab) {
     toggle_extension(tab);
     console.log('toggle_extension');
 });
-
-chrome.runtime.onMessage.addListener(
-    function (request, sender, sendResponse) {
-        if (request.message === "init") {
-            countdown.initValue = request.coutndown;
-            countdown.remain = countdown.initValue;
-            reloadStatus.setOn();
-            sendResponse({message: "success"});
-        }
-
-        if (request.message === "stop") {
-            reloadStatus.setOff();
-            sendResponse({message: "success"});
-        }
-    }
-);
 
 
 function reloadPage() {
@@ -235,16 +219,21 @@ function displayHtml(html) {
 
             var stockInStorage = `Ordi: ${data.ordinateur_stock} \n Pieces: ${data.pieces_stock} \n Peripheriques: ${data.peripheriques_stock} \n Image et son: ${data.imageetson_stock} \n Mobilite: ${data.mobilite_stock} \n Reseaux: ${data.reseaux_stock}`;
 
-            sendSlackMessage(stockInStorage);
+            sendSlackMessage(stockInStorage, slackAllmessagesUrl);
 
             if (options.items.length > 0) {
                 // Send the notif
                 chrome.notifications.create('', options);
                 console.log(options);
 
-                sendEmail(options);
+                var textToSend = "";
+                for (let i = 0; i < options.items.length; i++) {
+                    textToSend += `${options.items[i].title} : ${options.items[i].message} \n`;
+                }
+
+                sendSlackMessage(textToSend, slackNewStockOnlyUrl);
             } else {
-                sendSlackMessage( "Pas de changement de stock");
+                sendSlackMessage("Pas de changement de stock", slackAllmessagesUrl);
 
                 console.log("Pas de changement de stock")
             }
@@ -256,42 +245,42 @@ function displayHtml(html) {
     newDoc.body.remove();
 }
 
-function sendEmail(options) {
-    let api_key = '0fa83c48a38f87fdeca7dee19175fbf4-0a4b0c40-29e7039d';
-    let domain = 'sandbox62a8000983bd4f279cdabaeed49c1dbf.mailgun.org';
-
-    var emailText = [];
-
-    for (let i = 0; i < options.items.length; i++) {
-        emailText.push(options.items[i].title + " : " + options.items[i].message + '\n');
-    }
-
-    emailText.join("");
-
-    console.log(emailText);
-
-    $.ajax('https://api.mailgun.net/v3/sandbox62a8000983bd4f279cdabaeed49c1dbf.mailgun.org/messages',
-        {
-            type: "POST",
-            username: 'api',
-            password: api_key,
-            data: {
-                from: 'CDA <mailgun@sandbox62a8000983bd4f279cdabaeed49c1dbf.mailgun.org>',
-                // to: 'nicolas.crelier@gmail.com',
-                to: 'claudelrom90000@aim.com',
-                subject: 'Stock fdp',
-                text: emailText
-            },
-            success: function (a, b, c) {
-                console.log('mail sent: ', b);
-                sendSlackMessage( "Envoie mail succes");
-            }.bind(this),
-            error: function (xhr, status, errText) {
-                console.log('mail sent failed: ', xhr.responseText);
-                sendSlackMessage( xhr.responseText);
-            }
-        });
-}
+// function sendEmail(options) {
+//     let api_key = '0fa83c48a38f87fdeca7dee19175fbf4-0a4b0c40-29e7039d';
+//     let domain = 'sandbox62a8000983bd4f279cdabaeed49c1dbf.mailgun.org';
+//
+//     var emailText = [];
+//
+//     for (let i = 0; i < options.items.length; i++) {
+//         emailText.push(options.items[i].title + " : " + options.items[i].message + '\n');
+//     }
+//
+//     emailText.join("");
+//
+//     console.log(emailText);
+//
+//     $.ajax('https://api.mailgun.net/v3',
+//         {
+//             type: "POST",
+//             username: 'api',
+//             password: api_key,
+//             data: {
+//                 from: 'CDA <mailgun@sandbox62a8000983bd4f279cdabaeed49c1dbf.mailgun.org>',
+//                 // to: 'nicolas.crelier@gmail.com',
+//                 to: 'claudelrom90000@aim.com',
+//                 subject: 'Stock fdp',
+//                 text: emailText
+//             },
+//             success: function (a, b, c) {
+//                 console.log('mail sent: ', b);
+//                 sendSlackMessage("Envoie mail succes", slackAllmessages);
+//             }.bind(this),
+//             error: function (xhr, status, errText) {
+//                 console.log('mail sent failed: ', xhr.responseText);
+//                 sendSlackMessage(xhr.responseText, slackAllmessages);
+//             }
+//         });
+// }
 
 function setLocalStorage(keyName, value) {
     chrome.storage.sync.set({[keyName]: value}, function () {
@@ -299,9 +288,8 @@ function setLocalStorage(keyName, value) {
     });
 }
 
-function sendSlackMessage(textToSend) {
+function sendSlackMessage(textToSend, url) {
 
-    var url = 'https://hooks.slack.com/services/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';
     $.ajax({
         data: 'payload=' + JSON.stringify({
             "text": textToSend
@@ -317,38 +305,6 @@ function getStockQuantity(elementId, newDoc) {
     return newDoc.getElementById(elementId).getElementsByClassName("class_css")[0].innerText;
 }
 
-Array.prototype.where = function (filter) {
-
-    var collection = this;
-
-    switch (typeof filter) {
-
-        case 'function':
-            return $.grep(collection, filter);
-
-        case 'object':
-            for (var property in filter) {
-                if (!filter.hasOwnProperty(property))
-                    continue; // ignore inherited properties
-
-                collection = $.grep(collection, function (item) {
-                    return item[property] === filter[property];
-                });
-            }
-            return collection.slice(0); // copy the array
-        // (in case of empty object filter)
-
-        default:
-            throw new TypeError('func must be either a' +
-                'function or an object of properties and values to filter by');
-    }
-};
-
-
-Array.prototype.firstOrDefault = function (func) {
-    return this.where(func)[0] || null;
-};
-
 var reloadStatus = {
     setOn: function () {
         this.status = true;
@@ -356,12 +312,8 @@ var reloadStatus = {
     setOff: function () {
         this.status = false;
     },
+    status: false
 };
-
-setInterval(function () {
-    reloadPage()
-}, 300000);
-
 
 /*
 1 sec = 1000 ms
@@ -369,8 +321,62 @@ setInterval(function () {
 59 sec = 59000 ms
 100 sec = 100000 ms
 900 sec = 900000 ms
-10 min = 600000ms
+10 min = 600000 ms
  */
+
+
+let refreshTimeInMs = -1;
+let nextRefreshInSec = -1;
+
+chrome.runtime.onMessage.addListener(
+    function (request, sender, sendResponse) {
+        if (request.message === "init") {
+            refreshTimeInMs = request.refreshValue;
+            nextRefreshInSec = refreshTimeInMs / 1000;
+            startTimer();
+            countdown.initValue = request.coutndown;
+            countdown.remain = countdown.initValue;
+            reloadStatus.setOn();
+            reloadPage();
+            sendResponse({message: "success"});
+        }
+
+        if (request.message === "stop") {
+            reloadStatus.setOff();
+            sendResponse({message: "success"});
+        }
+    }
+);
+
+chrome.runtime.onConnect.addListener(function (port) {
+    console.assert(port.name === "letmeiiiiin");
+    port.postMessage({textValue: countdown.initValue, refreshValue: refreshTimeInMs, reloadStatus: reloadStatus.status});
+});
+
+setInterval(function () {
+
+    if (reloadStatus.status === true) {
+        if (nextRefreshInSec !== 0) {
+
+            const msg = `Prochain refresh dans ${nextRefreshInSec} secondes`;
+            chrome.storage.sync.set({nextRefresh: msg}, function () {
+            });
+            nextRefreshInSec--;
+        }
+
+        if (nextRefreshInSec === 0) {
+            nextRefreshInSec = refreshTimeInMs / 1000;
+        }
+    }
+
+
+}, 1000);
+
+function startTimer() {
+    setInterval(function () {
+        reloadPage()
+    }, refreshTimeInMs);
+}
 
 
 
