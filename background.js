@@ -45,8 +45,8 @@ var screenshot = {
     }
 };
 
-const slackAllmessagesUrl = 'https://hooks.slack.com/services/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';
-const slackNewStockOnlyUrl = 'https://hooks.slack.com/services/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';
+const slackAllmessagesUrl = 'https://hooks.slack.com/services/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';
+const slackNewStockOnlyUrl = 'https://hooks.slack.com/services/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';
 
 
 var countdown = {
